@@ -8,6 +8,9 @@ Refer to the [Go package
 documentation](https://pkg.go.dev/github.com/galdor/go-json-pointer) for
 information about the API.
 
+See the [`json-pointer` program](cmd/json-pointer/main.go) for a practical use
+case.
+
 # Licensing
 Go-json-pointer is open source software distributed under the
 [ISC](https://opensource.org/licenses/ISC) license.
