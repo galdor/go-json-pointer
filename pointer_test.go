@@ -6,6 +6,16 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+func TestNewPointer(t *testing.T) {
+	assert := assert.New(t)
+
+	assert.Equal("", NewPointer().String())
+	assert.Equal("/a", NewPointer("a").String())
+	assert.Equal("/a/42/b", NewPointer("a", 42, "b").String())
+	assert.Equal("/a/b/c",
+		NewPointer(NewPointer("a"), NewPointer("b", "c")).String())
+}
+
 func TestPointerParse(t *testing.T) {
 	assert := assert.New(t)
 

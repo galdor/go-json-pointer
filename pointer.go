@@ -23,8 +23,8 @@ func init() {
 	tokenDecoder = strings.NewReplacer("~1", "/", "~0", "~")
 }
 
-func NewPointer(tokens ...string) Pointer {
-	return Pointer(tokens)
+func NewPointer(tokens ...interface{}) Pointer {
+	return Pointer{}.Child(tokens...)
 }
 
 func (p *Pointer) Parse(s string) error {
