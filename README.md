@@ -1,4 +1,7 @@
 # go-json-pointer
+
+**Go-json-pointer is now available as part of [go-ejson](https://github.com/galdor/go-ejson).**
+
 ## Introduction
 The go-json-pointer library contains an implementation of RFC 6901 providing
 utilities to manipulate JSON pointers.
